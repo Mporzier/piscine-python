@@ -46,6 +46,6 @@ class ColorFilter():
 img = ImageProcessor()
 item = ColorFilter()
 array = img.load("../resources/test.png")
-array = item.to_grayscale(array)
+array = item.to_grayscale(array, 1)
 processedImg = Image.fromarray(array, 'RGB')
 processedImg.show()
